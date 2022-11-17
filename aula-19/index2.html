@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Aula 10.2</title>
+
+  <!-- STATIC | FIXED | STICKY | RELATIVE | ABSOLUTE -->
+
+  <style>
+
+    *{
+      margin: 0;
+      padding:0;
+    }
+
+
+    
+
+    .container{
+      position: relative;
+      width: 400px;
+      height: 400px;
+      background-color: yellowgreen;
+      margin-bottom: 400px;
+      margin-top: 100px;
+    }
+
+    .box{
+      position: absolute;
+      top:60px;
+      left: 60px;
+      /* position: relative; */
+      /* top:100px;
+      left:100px; */
+      /* margin-top: 400px; */
+      /* top:100px; */
+    
+      /* position: sticky;  */
+     
+      width: 260px;
+      height: 260px;
+      background-color: blue;
+      z-index: 3;
+      
+    }
+
+    .box2{
+      position: absolute;
+      top:90px;
+      left: 90px;
+      /* position: relative; */
+      /* top:100px;
+      left:100px; */
+      /* margin-top: 400px; */
+      /* top:100px; */
+    
+      /* position: sticky;  */
+      z-index: 2;
+      width: 260px;
+      height: 260px;
+      background-color: brown;
+      /* z-index: 1; */
+    }
+
+    .box3{
+      position: absolute;
+      top: 120px;
+      left: 120px;
+      /* position: relative; */
+      /* top:100px;
+      left:100px; */
+      /* margin-top: 400px; */
+      /* top:100px; */
+    
+      /* position: sticky;  */
+      z-index: 1;
+      width: 260px;
+      height: 260px;
+      background-color: palegreen;
+      /* z-index: 1; */
+    }
+  </style>
+
+</head>
+<body>
+
+  
+  <div class="container">
+
+    <div class="box"></div>
+
+    <div class="box2"></div>
+
+    <div class="box3"></div>
+  
+  </div>
+  
+</body>
+</html>

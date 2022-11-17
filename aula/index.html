@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+
+    <title>Aula Flexbox</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        /* height: 100vh; */
+      }
+
+      .pai {
+        background: yellow;
+        display: flex;
+        /* flex-wrap: wrap; */
+        flex-wrap: wrap-reverse;
+       
+        justify-content: flex-end;
+        align-items: flex-start;
+      }
+
+      .filho1{
+        background: blue;
+        height: 100px;
+        width: 150px;
+      }
+      .filho2{
+        /* flex-grow: 1; */
+        background: red;
+        height: 100px;
+        width: 150px;
+      }
+
+      .filho3{
+        /* flex-grow: 2; */
+        background: green;
+        height: 100px;
+        width: 150px;
+      }
+
+      .filho4{
+        background: orange;
+        height: 100px;
+        width: 150px;
+      }
+
+      .filho5{
+        background: black;
+        height: 100px;
+        width: 150px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="pai">
+      <div class="filho1"></div>
+      <div class="filho2"></div>
+      <div class="filho3"></div>
+      <div class="filho4"></div>
+      <div class="filho5"></div>
+    </body>
+</html>
