@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  background: rebeccapurple;
+  opacity: 0.2;
+  transition: 0.2s all ease;
+}
+
+nav:hover {
+  opacity: 1;
+}
+
+a {
+  text-decoration: none;
+  color: #1b1b1b;
+
+  transition: 0.3s all ease;
+}
+
+a:hover {
+  /* color: red;
+  background: yellow; */
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.item {
+  color: green;
+}
+
+.item:hover {
+  color: blue;
+}
+
+#elemento:hover {
+}
+
+a:visited {
+  color: purple;
+}
+
+input {
+  outline: 0;
+  /* border: 1px solid #bebcbc; */
+  /* border: 0; */
+}
+
+input:focus {
+  border: 5px dashed red;
+}
+
+input[type="email"] {
+  background: violet;
+}
+
+a::after {
+  content: "-";
+}
+
+h1::before {
+  content: "☢";
+  /* display: block; */
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  background: red;
+}
+
+h1::after {
+  content: "❤";
+  /* display: block; */
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  background: red;
+}
+
+/* elemento especifico */
+li:nth-child(1) {
+  background: red;
+}
+
+/* elementos multiplos */
+li:nth-child(3n) {
+  background: red;
+}
+
+li:nth-child(-n + 3) {
+  background: blue;
+}
+
+li:nth-child(n + 2):nth-child(-n + 6) {
+  background: pink;
+}
+
+input:valid {
+  background: blue;
+}
+
+input:disabled {
+  background: yellow;
+}
