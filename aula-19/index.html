@@ -1,39 +1,117 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <title>Aula 10</title>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <meta charset="UTF-8" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <nav>
+        <img src="./imgs/logo.png" class="logo" />
 
-  <style>
+        <div></div>
 
-    *{
-      box-sizing: border-box;
-    }
+        <ul class="menu">
+          <li>Home</li>
+          <li><a href="#locales">Events</a></li>
+          <li><a href="#about">About</a></li>
+          <li>Blog</li>
+          <li>Contact</li>
+        </ul>
 
-    .container{
-      background-color: red ;
+        <button class="btn_number">
+          <img src="./imgs/phone.png" width="15" /> +1 (000) 000 000
+        </button>
+      </nav>
 
-      width: 200px;
-      height: 200px;
+      <div class="content_main">
+        <div class="content_texts">
+          <div class="content_title_main">
+            <h1 class="title_main">
+              <span class="title_main_brown">Life is a journey</span>, not a
+              destination
+            </h1>
+          </div>
 
-      /* box-sizing: border-box; */
-      border: 5px solid black;
+          <div class="content_description_main">
+            <p class="description_main">
+              Let’s start your journey with us, your dream will come true...
+            </p>
+          </div>
+          <button class="btn_main">Explore Destinations</button>
+        </div>
 
-       padding: 20px;
-/*
-      border: 5px solid black;
+        <div class="content_img">
+          <img src="./imgs/travel.png" class="img_content" />
+        </div>
+      </div>
+    </main>
 
-      margin: 10px; */
-    }
+    <section class="section_locales" id="locales">
+      <h2>
+        <span class="title_main_brown">Check Our Best</span> Promotional Tour
+      </h2>
 
-  </style>
+      <div class="container_section_locales_paragrafo">
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book.
+        </p>
+      </div>
 
-</head>
-<body>
+      <div class="container_cards_locale">
+        <div class="card_locale">
+          <img src="./imgs/card1.png" />
+          <p>Beijing</p>
+        </div>
 
-  <div class="container">
-    Conteúdo
-  </div>
-  
-</body>
+        <div class="card_locale">
+          <img src="./imgs/card2.png" />
+          <p>Turkey</p>
+        </div>
+
+        <div class="card_locale">
+          <img src="./imgs/card3.png" />
+          <p>Pakistan</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section_types" id="about">
+      <h2><span class="title_main_brown">Globally</span> Accepted</h2>
+
+      <div class="container_text_types">
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book.
+        </p>
+      </div>
+
+      <div class="content_cards_type">
+        <div class="card_transparent">
+          <img src="./imgs/bg.png" />
+          <div class="card_type_transparent">
+            <p>For Domestic</p>
+            <button>Start trip today</button>
+          </div>
+        </div>
+
+        <div class="card_type">
+          <p>For Domestic</p>
+          <button>Start trip today</button>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>

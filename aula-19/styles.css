@@ -1,0 +1,292 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+button {
+  cursor: pointer;
+}
+
+main {
+  background: #f0c53e;
+  min-height: 100vh;
+  padding: 30px 100px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  width: 180px;
+  height: 80px;
+  object-fit: contain;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+.menu li {
+  margin: 0 20px;
+}
+
+.btn_number {
+  cursor: pointer;
+  background-color: #b25a59;
+  border: none;
+  height: 50px;
+  padding: 0 30px;
+  border-radius: 60px;
+  color: #ffffff;
+
+  display: flex;
+  align-items: center;
+
+  transition: 0.5s ease all;
+}
+
+.btn_number:hover {
+  background-color: #8d3c3b;
+}
+
+.btn_number img {
+  margin-right: 10px;
+}
+
+.content_main {
+  margin-top: 100px;
+  display: flex;
+  flex: 1;
+
+  flex-wrap: wrap;
+}
+
+.content_texts {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.content_img {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.content_title_main {
+  max-width: 600px;
+}
+
+.title_main {
+  margin-top: 150px;
+  font-size: 54px;
+  font-weight: 900;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.title_main_brown {
+  color: #7f2736;
+}
+
+.content_description_main {
+  max-width: 600px;
+}
+
+.description_main {
+  margin-top: 50px;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.btn_main {
+  width: 230px;
+  margin-top: 50px;
+  background-color: #b25a59;
+  border: none;
+  height: 50px;
+  padding: 0 30px;
+  border-radius: 60px;
+  color: #ffffff;
+}
+
+.section_locales {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.section_locales h2 {
+  text-align: center;
+}
+
+.container_section_locales_paragrafo {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.container_section_locales_paragrafo p {
+  text-align: center;
+  margin-top: 30px;
+  line-height: 32px;
+}
+
+.container_cards_locale {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+
+.card_locale {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card_locale img {
+  width: 450px;
+  height: 450px;
+  object-fit: contain;
+}
+
+.section_types {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section_types h2 {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.container_text_types {
+  max-width: 900px;
+  margin-top: 40px;
+}
+
+.container_text_types p {
+  line-height: 32px;
+  text-align: center;
+}
+
+.content_cards_type {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 80px;
+  align-items: center;
+  justify-content: center;
+}
+
+.card_transparent {
+  border-radius: 30px;
+  position: relative;
+  width: 500px;
+  height: 350px;
+  background: #7f2736;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card_transparent img {
+  width: 300px;
+  opacity: 0.3;
+}
+
+.card_type_transparent {
+  border-radius: 30px;
+  background: rgba(127, 39, 54, 0.3);
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card_type_transparent p {
+  font-size: 32px;
+  color: #fff;
+}
+
+.card_type_transparent button {
+  background: transparent;
+  border: 2px solid #fff;
+  padding: 15px 40px;
+  border-radius: 30px;
+  color: #fff;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.card_type {
+  width: 600px;
+  height: 400px;
+  background: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 20px;
+}
+
+/* ANIMAÇÕES */
+
+/* 
+  SCALE => Diminuir e aumentar nos eixos x e y
+  SKEW => Desvio encima e abaixo do elemento
+  ROTATE => GIra o elemento
+  TRANSLATE => Movimenta o elemento
+*/
+
+.btn_number:hover {
+  /* transform: scale(1.2, 1.3); */
+  /* transform: skew(90deg); */
+  /* transform: rotate(180deg); */
+  /* transform: translate(10px, 10px); */
+}
+
+.img_content {
+  /* transform: translateY(-50px); */
+  animation: img_content_animation 4s infinite;
+}
+
+/* KEYFRAME */
+
+@keyframes img_content_animation {
+  0% {
+    transform: translateY(0px);
+  }
+
+  25% {
+    transform: translateY(-10px);
+  }
+
+  50% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.card_locale:hover {
+  transform: scale(1.1, 1.1);
+}
